@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190614053629_init.cs" />
+    <Compile Remove="Migrations\20190614053629_init.Designer.cs" />
+    <Compile Remove="Migrations\20190616014009_init.cs" />
+    <Compile Remove="Migrations\20190616014009_init.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jiavs.Domain\Jiavs.Domain.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure.Identity\Jiavs.Infrastructure.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

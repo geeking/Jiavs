@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C98F7C3C-534C-410E-8CBC-176A2FF0677F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{26C24CD2-CEF4-4F93-BE45-F2D3347C5BCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{44266894-D75A-40DD-9FB8-D8353D53AFFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{1A971561-21FE-46B2-9C36-4C5118709755}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.MVC", "Jiavs.MVC\Jiavs.MVC.csproj", "{E9A4A462-D3E2-4BF8-A065-0BC52414B832}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Application", "Jiavs.Application\Jiavs.Application.csproj", "{6BDEDC64-895F-4EFA-A250-9F6999DF3F31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Domain", "Jiavs.Domain\Jiavs.Domain.csproj", "{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Infrastructure", "Jiavs.Infrastructure\Jiavs.Infrastructure.csproj", "{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Domain.Core", "Jiavs.Domain.Core\Jiavs.Domain.Core.csproj", "{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Infrastructure.Repository", "Jiavs.Infrastructure.Repository\Jiavs.Infrastructure.Repository.csproj", "{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Infrastructure.Security", "Jiavs.Infrastructure.Security\Jiavs.Infrastructure.Security.csproj", "{5CAEC8DD-5648-4C85-9767-5E93106A5A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jiavs.Infrastructure.Identity", "Jiavs.Infrastructure.Identity\Jiavs.Infrastructure.Identity.csproj", "{E280DBA5-AA60-4C05-9EB9-98E189DB43C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9A4A462-D3E2-4BF8-A065-0BC52414B832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A4A462-D3E2-4BF8-A065-0BC52414B832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A4A462-D3E2-4BF8-A065-0BC52414B832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A4A462-D3E2-4BF8-A065-0BC52414B832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDEDC64-895F-4EFA-A250-9F6999DF3F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDEDC64-895F-4EFA-A250-9F6999DF3F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDEDC64-895F-4EFA-A250-9F6999DF3F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDEDC64-895F-4EFA-A250-9F6999DF3F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAEC8DD-5648-4C85-9767-5E93106A5A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAEC8DD-5648-4C85-9767-5E93106A5A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAEC8DD-5648-4C85-9767-5E93106A5A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAEC8DD-5648-4C85-9767-5E93106A5A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E280DBA5-AA60-4C05-9EB9-98E189DB43C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E280DBA5-AA60-4C05-9EB9-98E189DB43C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E280DBA5-AA60-4C05-9EB9-98E189DB43C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E280DBA5-AA60-4C05-9EB9-98E189DB43C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9A4A462-D3E2-4BF8-A065-0BC52414B832} = {1A971561-21FE-46B2-9C36-4C5118709755}
+		{6BDEDC64-895F-4EFA-A250-9F6999DF3F31} = {C98F7C3C-534C-410E-8CBC-176A2FF0677F}
+		{26E0AD23-BD75-4F92-94A3-F9CF2FC9BD56} = {26C24CD2-CEF4-4F93-BE45-F2D3347C5BCE}
+		{D20C04AC-6420-4E33-AF64-1BE2E1DFD5CB} = {44266894-D75A-40DD-9FB8-D8353D53AFFE}
+		{BF5A7CFE-DA02-47A3-8F49-1FE5CBB9C413} = {26C24CD2-CEF4-4F93-BE45-F2D3347C5BCE}
+		{5F5FF8E4-8898-45F0-AAE3-104F1F63EBE2} = {44266894-D75A-40DD-9FB8-D8353D53AFFE}
+		{5CAEC8DD-5648-4C85-9767-5E93106A5A6E} = {44266894-D75A-40DD-9FB8-D8353D53AFFE}
+		{E280DBA5-AA60-4C05-9EB9-98E189DB43C0} = {44266894-D75A-40DD-9FB8-D8353D53AFFE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FA67591-544D-45CC-9550-94455200D7BA}
+	EndGlobalSection
+EndGlobal

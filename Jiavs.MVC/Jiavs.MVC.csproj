@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jiavs.Application\Jiavs.Application.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure.Identity\Jiavs.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure.Repository\Jiavs.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure.Security\Jiavs.Infrastructure.Security.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure\Jiavs.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
