@@ -73,13 +73,8 @@ The main project of Domain,organize and divide business.Dependent on `Domain.Cor
         |---ArticleCommandValidation.cs             //文章命令泛型验证器，使用FluentValidation组件
 ```
 
-# 02 Jiavs.Infrastructure
-
-# 03 Jiavs.Infrastructure.Identity
-
-# 04 Jiavs.Infrastructure.Repository
-
-# 05 Jiavs.Infrastructure.Security
+# 02 Jiavs.Infrastructure.*
+基础设施层
 
 # 06 Jiavs.Application
 

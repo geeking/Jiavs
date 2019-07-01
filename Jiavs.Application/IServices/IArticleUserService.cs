@@ -1,4 +1,4 @@
-﻿using Jiavs.Application.Models;
+﻿using Jiavs.Infrastructure.DTO;
 
 namespace Jiavs.Application.IServices
 {

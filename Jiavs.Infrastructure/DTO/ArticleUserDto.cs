@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jiavs.Application.Models
+namespace Jiavs.Infrastructure.DTO
 {
     public class ArticleUserDto
     {

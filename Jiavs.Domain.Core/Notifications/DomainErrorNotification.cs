@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Jiavs.Domain.Core.Notifications
 {
+    /// <summary>
+    /// 领域异常通知消息对象
+    /// </summary>
     public class DomainErrorNotification : BaseEvent
     {
         public string Key { get; private set; }

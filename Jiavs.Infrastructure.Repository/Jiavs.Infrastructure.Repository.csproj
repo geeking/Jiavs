@@ -14,11 +14,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Jiavs.Domain\Jiavs.Domain.csproj" />
     <ProjectReference Include="..\Jiavs.Infrastructure.Identity\Jiavs.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\Jiavs.Infrastructure\Jiavs.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
-﻿using Jiavs.Application.Models;
-using Jiavs.Domain.Core.Models;
+﻿using Jiavs.Domain.Core.Models;
 using Jiavs.Domain.Models;
+using Jiavs.Infrastructure.DTO;
 using System.Threading.Tasks;
 
 namespace Jiavs.Application.IServices

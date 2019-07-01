@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
-using Jiavs.Application.Models;
+﻿using AutoMapper;
 using Jiavs.Domain.Core.Models;
 using Jiavs.Domain.Models;
+using Jiavs.Infrastructure.DTO;
+using System.Collections.Generic;
 
 namespace Jiavs.Application.AutoMapper.Profiles
 {

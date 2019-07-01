@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Jiavs.Domain.Core\Jiavs.Domain.Core.csproj" />
+    <ProjectReference Include="..\Jiavs.Domain\Jiavs.Domain.csproj" />
   </ItemGroup>
 
 </Project>

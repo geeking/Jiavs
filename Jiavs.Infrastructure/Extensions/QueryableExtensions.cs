@@ -8,6 +8,14 @@ namespace Jiavs.Infrastructure.Extensions
 {
     public static class QueryableExtensions
     {
+        /// <summary>
+        /// 向IQueryable应用排序规则
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="orderBy">排序字段，多个用","分隔，如:id desc,title</param>
+        /// <param name="propertyMapping">字段的映射规则</param>
+        /// <returns></returns>
         public static IQueryable<T> ApplySort<T>(this IQueryable<T> source,string orderBy,IPropertyMapping propertyMapping)
         {
             if (source == null)

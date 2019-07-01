@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using Jiavs.Application.IServices;
-using Jiavs.Application.Models;
 using Jiavs.Domain.Commands.Articles;
 using Jiavs.Domain.Core.Bus;
 using Jiavs.Domain.Core.Models;
@@ -10,6 +9,7 @@ using Jiavs.Domain.Core.NotificationHandlers;
 using Jiavs.Domain.Core.Notifications;
 using Jiavs.Domain.IRepositorys;
 using Jiavs.Domain.Models;
+using Jiavs.Infrastructure.DTO;
 using MediatR;
 
 namespace Jiavs.Application.Services
@@ -56,8 +56,8 @@ namespace Jiavs.Application.Services
         public async Task<PaginatedResultList<ArticleDto>> GetArticlesSummaryAsync(ArticlePaginationParameter pagination)
         {
             var articles = await _articleRepository.GetArticlesSummaryAsync(pagination);
-
-            throw new System.NotImplementedException();
+            var articleDto = _mapper.Map<PaginatedResultList<ArticleDto>>(articles);
+            return articleDto;
         }
 
         public bool Create(ArticleDto articleDto)

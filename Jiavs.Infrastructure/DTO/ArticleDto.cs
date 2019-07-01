@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jiavs.Application.Models
+namespace Jiavs.Infrastructure.DTO
 {
     public class ArticleDto
     {

@@ -5,19 +5,30 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Jiavs.MVC.Models;
+using Jiavs.Application.IServices;
+using Jiavs.Domain.Models;
 
 namespace Jiavs.MVC.Controllers
 {
     public class HomeController : Controller
     {
-
-        public HomeController()
+        private readonly IArticleService _articleService;
+        private readonly int PageSize = 20;
+        public HomeController(IArticleService articleService)
         {
+            this._articleService = articleService;
 
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index(int page = 0)
         {
-            return View();
+            var articlePagination = new ArticlePaginationParameter
+            {
+                PageSize = this.PageSize,
+                PageIndex = page
+            };
+            
+            var articles =  _articleService.GetArticlesSummary(articlePagination);
+            return View(articles);
         }
 
         public IActionResult Privacy()

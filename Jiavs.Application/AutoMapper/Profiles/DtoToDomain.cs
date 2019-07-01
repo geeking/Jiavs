@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Jiavs.Application.Models;
 using Jiavs.Domain.Models;
+using Jiavs.Infrastructure.DTO;
 using System.Collections.Generic;
 
 namespace Jiavs.Application.AutoMapper.Profiles

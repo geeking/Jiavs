@@ -1,14 +1,12 @@
 ﻿using AutoMapper;
 using Jiavs.Application.IServices;
-using Jiavs.Application.Models;
 using Jiavs.Domain.Commands.ArticleUsers;
 using Jiavs.Domain.Core.Bus;
 using Jiavs.Domain.Core.NotificationHandlers;
 using Jiavs.Domain.Core.Notifications;
+using Jiavs.Infrastructure.DTO;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Jiavs.Application.Services
 {

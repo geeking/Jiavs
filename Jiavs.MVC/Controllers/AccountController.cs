@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Jiavs.Application.IServices;
-using Jiavs.Application.Models;
+﻿using Jiavs.Application.IServices;
+using Jiavs.Infrastructure.DTO;
 using Jiavs.Infrastructure.Identity.Models;
 using Jiavs.Infrastructure.Identity.Models.AccountViewModels;
-using Jiavs.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Jiavs.MVC.Controllers
 {
@@ -38,12 +37,17 @@ namespace Jiavs.MVC.Controllers
             SetReturnUrl(returnUrl);
             if (ModelState.IsValid)
             {
-                var signResult = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-
-                if (signResult.Succeeded)
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user != null)
                 {
-                    return SafeLocalRedirect(returnUrl);
+                    var signResult = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberMe, false);
+
+                    if (signResult.Succeeded)
+                    {
+                        return SafeLocalRedirect(returnUrl);
+                    }
                 }
+
 
                 ModelState.AddModelError(string.Empty, "登录失败");
             }
@@ -75,6 +79,8 @@ namespace Jiavs.MVC.Controllers
                         Email = model.Email,
                         RegisterTime = DateTime.UtcNow
                     };
+                    var loginResult = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+
                     _articleUserService.Create(userDto);
                     return SafeLocalRedirect(returnUrl);
                 }
@@ -82,6 +88,13 @@ namespace Jiavs.MVC.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToHome();
+        }
         private void SetReturnUrl(string returnUrl)
         {
             ViewData["ReturnUrl"] = returnUrl;
@@ -95,8 +108,13 @@ namespace Jiavs.MVC.Controllers
             }
             else
             {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                return RedirectToHome();
             }
+        }
+
+        private IActionResult RedirectToHome()
+        {
+            return RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
 }

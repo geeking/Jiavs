@@ -15,6 +15,7 @@ namespace Jiavs.Infrastructure.Repository
 
         public BaseRepository(JiavsContext jiavsContext)
         {
+            _jiavsContext = jiavsContext;
             _dbSet = jiavsContext.Set<T>();
         }
 

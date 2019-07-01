@@ -10,6 +10,7 @@ namespace Jiavs.Domain.Core.Models
     public class PaginationBase
     {
         private const int DefaultPageSize = 10;
+        private const int DefaultMaxPageSize = 40;
         private int _pageSize = DefaultPageSize;
 
         public int PageSize
@@ -48,7 +49,7 @@ namespace Jiavs.Domain.Core.Models
             }
         }
         public string OrderBy { get; set; } = $"{nameof(IEntity.Id)} desc";
-        private int _maxPageSize;
+        private int _maxPageSize = DefaultMaxPageSize;
 
         public int MaxPageSize
         {

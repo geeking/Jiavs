@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Jiavs.Domain.Core.NotificationHandlers
 {
+    /// <summary>
+    /// 领域异常通知处理器基类
+    /// </summary>
     public class DomainErrorNotificationHandler : INotificationHandler<DomainErrorNotification>
     {
         private List<DomainErrorNotification> _errorNotifications;
